@@ -1,42 +1,136 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-    http://www.apache.org/licenses/LICENSE-2.0
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Foundation 4</title>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova-2.5.0.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+</head>
+<body>
+	<nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="index.html">AVF Project </a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li class="has-dropdown"><a href="#">Native Component Demos</a>
+          <ul class="dropdown">
+            <li class="divider"></li>
+            <li><a href="#">TBD</a></li>
+            <li class="divider"></li>
+            <li><a href="#">TBD</a></li>
+            <li class="divider"></li>
+            <li><a href="#">TBD</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="has-dropdown"><a href="#">API Demos</a>
+          <ul class="dropdown">
+            <li class="divider"></li>
+            <li><a href="#">Twitter</a></li>
+            <li class="divider"></li>
+            <li><a href="#">TBD</a></li>
+            <li class="divider"></li>
+            <li><a href="#">TBD</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="has-dropdown"><a href="#">Weekly Research Topics</a>
+          <ul class="dropdown">
+            <li class="divider"></li>
+            <li><a href="#">Week 1 Research</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Week 2 Research</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Week 3 Research</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <!-- Begin Content Grid -->
+	<div class="row">
+		<div class="large-12 columns">
+			<h2 class="center">AVF Demo App</h2>
+			<p class="center">Aaron Burke </br> AVF 1303</p>
+			<hr />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 columns">
+			<h3>Native Feature Demos</h3>
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="panel">
+						<p>This will hold links or buttons to the native features I will be displaying.</p>
+					</div>
+				</div>
+			</div>
+      <h3>API Demos</h3>
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="panel">
+						<p>This will hold links or buttons to the display Demos of API integrations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- Right hand side Column that responsively goes under when scalle -->
+		<div class="large-4 columns">
+			<h4 class="center">Research Topics</h4>
+      <hr /> 
+			<p>Weekly research topics are listed below:</p>
+      <ul class="small-block-grid-1">
+        <li><a href="#">Week 1 Research</a></li>
+        <li><a href="#">Week 2 Research</a></li>
+        <li><a href="#">Week 3 Research</a></li>
+      </ul>
+      </ul>
+			<h4 class="center">Resources Used</h4>
+      <hr /> 
+			<ul class="small-block-grid-4">
+        <li><img src="img/cordova.png"></li>
+        <li><img src="img/foundation.png"></li>
+        <li><img src="img/zepto.png"></li>
+        <li><img src="img/twitter.png"></li>
+      </ul>
+		</div>
+	</div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <!-- Scripts loaded from framework I will write my own JS for the implementations we do -->
+  <!-- Framework was utilized for its responsive design grid -->
+  <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script type="text/javascript" src="cordova-2.5.0.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
 </html>
