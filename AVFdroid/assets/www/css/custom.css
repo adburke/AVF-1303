@@ -1,0 +1,30 @@
+/* 	Aaron Burke 
+	AVF 1303
+*/
+
+html{
+	background:url('../img/wooden-planks-6.jpg') no-repeat center center;
+	min-height:100%;
+	background-size:cover;
+}
+
+body{
+	min-height:100%;
+	background: transparent;
+
+}
+
+
+.center {
+	text-align: center;
+}
+
+@media only screen and (min-width: 58.75em) {
+	.top-bar-section .dropdown {
+		width: 100%;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #fff;
+}
