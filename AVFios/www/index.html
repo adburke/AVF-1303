@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" ng-app="angularApp"> 
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse ">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="index.html">AVF Demo Project</a>
+     
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+ 
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Native Component Demos<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">TBD Placeholder</a></li>
+                  <li><a href="#">TBD Placeholder</a></li>
+                  <li><a href="#">TBD Placeholder</a></li>
+                  <li><a href="#">TBD Placeholder</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">API Demos<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Twitter Search</a></li>
+                  <li><a href="#">TBD Placeholder</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- nav-collapse collapse -->
+        </div><!-- container -->
+      </div><!-- navbar-inner -->
+    </div><!-- navbar -->
+
+    <div class="container" ng-view></div>
+
+    <script type="text/javascript" src="components/cordova/cordova-2.5.0.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/jquery/jquery-1.9.1.min.js"></script>
+    <script src="components/bootstrap/bootstrap.min.js"></script>
+
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+/* 	Aaron Burke 
+	AVF 1303
+*/
+
+html{
+	background:url('../img/wooden-planks-6.jpg') no-repeat center center;
+	min-height:100%;
+	background-size:cover;
+}
+
+body{
+	min-height:100%;
+	background: transparent;
+	color: rgb(128, 219, 255);
+
+}
+
+.navbar-inverse .navbar-inner {
+	background-image: -moz-linear-gradient(top, #333333, #222222);
+	background-image: -ms-linear-gradient(top, #333333, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+	background-image: -webkit-linear-gradient(top, #333333, #222222);
+	background-image: -o-linear-gradient(top, #333333, #222222);
+	background-image: linear-gradient(top, #333333, #222222);
+	background-repeat: repeat-x;
+}
+.hero-unit {
+	margin-bottom: 21px;
+}
+div#search-container.hero-unit {
+	padding: 30px;
+	background-color: rgb(35, 141, 141);
+	color: #fff;
+}
+div#search-container p,h4 {
+	color: rgb(173, 255, 255);
+}
+div#search-container h1 {
+	font-size: 48px;
+	text-align: center;
+}
+div#search-container h2 {
+	font-size: 31.5px;
+	text-align: center;
+}
+div#search-container label {
+	text-align: center;
+}
+div#search-container input.search-query {
+	width: 100%;
+	margin-bottom: 10px;
+}
+div#search-container label {
+	display: table;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+div#search-container .btn.btn-block {
+	width: 200px;
+	margin-top: 10px;
+	display: table;
+	margin: 0 auto;
+}
+@media (max-width: 979px) and (min-width: 768px){
+	div#search-container .btn.btn-block {
+		width: 150px;
+	}
+	div#search-container h1 {
+		font-size: 35px;
+		text-align: center;
+	}
+	div#search-container.hero-unit {
+		padding: 20px;
+	}
+}
+
