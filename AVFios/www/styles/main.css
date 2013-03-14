@@ -62,9 +62,17 @@ div#search-container .btn.btn-block {
 	display: table;
 	margin: 0 auto;
 }
+
+/* Twitter Page Settings */
 div#tweet-container li {
 	list-style: none;
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
+	padding-bottom: 9px;
 }
+div#tweet-container p {
+}
+
+/* YouTube Page Settings */
 div#ytube-container li {
 	list-style: none;
 	margin-left: 8px;
@@ -73,9 +81,23 @@ div#ytube-container li {
 div#ytube .hero-unit {
 	background-color: rgb(40, 98, 160);
 }
+div#ytube .thumbnail {
+	height: 300px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.52);
+}
+div#ytube .thumbnail h3 {
+	padding-left: 4px;
+}
+div#ytube .thumbnail h1,h2,h3 {
+	line-height: 22px;
+	font-size: 16px;
+}
 iframe {
 	max-width: 100%;
 }
+
+/* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
 	div#search-container .btn.btn-block {
 		width: 150px;
@@ -91,13 +113,33 @@ iframe {
 		list-style: none;
 		margin-left: 8px;
 		width:220px;
+		padding-right: 10px;
 	}
 }
-@media (max-width: 979px) {
+@media (max-width: 767px) {
 	div#ytube-container li {
-		margin-left: 0;
+		margin-left: 0px;
+	}
+	div#ytube .thumbnail h1,h2,h3 {
+		font-size: 25px;
+		line-height: 40px;
 	}
 }
-
+@media (max-width: 480px) {
+	div#tweet-container img{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: -3px;
+	}
+	div#tweet-container .media-body {
+		overflow: visible;
+	}
+	div#tweet-container .media-body a {
+		float:none;
+	}
+	div#tweet-container .media-body p {
+		clear: none;
+	
+}
 
 
