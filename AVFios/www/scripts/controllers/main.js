@@ -23,7 +23,7 @@ function twitCtrl($scope, $http) {
 function ytubeCtrl($scope, $http) {
   $scope.input = '';
   $scope.search = function () {
-    $http.jsonp('https://gdata.youtube.com/feeds/api/videos?%20q=' + $scope.input + '&alt=json&max-results=5&callback=JSON_CALLBACK')
+    $http.jsonp('https://gdata.youtube.com/feeds/api/videos?category=' + $scope.input + '&alt=json&max-results=5&v=2&callback=JSON_CALLBACK')
       .success(function(data) {
         $scope.videos = data.feed.entry;
         console.log(data);

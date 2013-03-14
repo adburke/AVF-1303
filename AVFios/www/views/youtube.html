@@ -1,8 +1,7 @@
-<div class="row-fluid" ng-controller="ytubeCtrl">
+<div id="ytube" class="row-fluid" ng-controller="ytubeCtrl">
 	<div class="span4">
 		<div id="search-container" class="hero-unit">
-			<h1>YouTube API</h1>
-			
+			<h1>YouTube</h1>
 			<form class="form-search" ng-submit="search()">
 				<label>Search for Videos!</label>
 				<input type="text" class="span6 search-query" placeholder="Feed me!" ng-model="input">
@@ -13,13 +12,22 @@
 			<h4>Enjoy!</h4>
 		</div>
 	</div>
-	<div class="span6">
+	<div class="span8">
 		<div id="tweet-container">
-			<ul class="media-list">
-				<li class="media" ng-repeat="results in videos">
-					<a class="pull-left" href="{{results.link[0].href}}">
-						<img class="media-object" ng-src="{{results.media$group.media$thumbnail[2].url}}">
-					</a>
+			<!-- <ul>
+				<li ng-repeat="results in videos">
+					<iframe class="youtube-player" type="text/html" width="640" height="385" ng-src="http://www.youtube.com/embed/{{results.media$group.yt$videoid.$t}}" allowfullscreen frameborder="0"> 
+					</iframe>
+				</li>
+			</ul> -->
+			<ul class="thumbnails">
+				<li class="span" ng-repeat="results in videos">
+					<div class="thumbnail">
+						<iframe class="youtube-player" type="text/html" width="300" height="200" ng-src="http://www.youtube.com/embed/{{results.media$group.yt$videoid.$t}}" allowfullscreen frameborder="0"> 
+						</iframe>
+						<h3>Thumbnail label</h3>
+						<p>Thumbnail caption...</p>
+					</div>
 				</li>
 			</ul>
 		</div>
