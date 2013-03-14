@@ -65,6 +65,10 @@ div#search-container .btn.btn-block {
 div#tweet-container li {
 	list-style: none;
 }
+div#ytube-container li {
+	list-style: none;
+	margin-left: 8px;
+}
 div#ytube .hero-unit {
 	background-color: rgb(40, 98, 160);
 }
@@ -84,12 +88,4 @@ iframe {
 	}
 }
 
-/*display: block;
-max-width: 100%;
-margin-right: auto;
-margin-left: auto;*/
 
-/*img
-vertical-align: middle;
-height: auto;
-*/
