@@ -68,6 +68,7 @@ div#tweet-container li {
 div#ytube-container li {
 	list-style: none;
 	margin-left: 8px;
+	margin-bottom: 8px;
 }
 div#ytube .hero-unit {
 	background-color: rgb(40, 98, 160);
@@ -86,6 +87,17 @@ iframe {
 	div#search-container.hero-unit {
 		padding: 20px;
 	}
+	div#ytube-container li {
+		list-style: none;
+		margin-left: 8px;
+		width:220px;
+	}
 }
+@media (max-width: 979px) {
+	div#ytube-container li {
+		margin-left: 0;
+	}
+}
+
 
 
