@@ -12,6 +12,7 @@ body{
 	min-height:100%;
 	background: transparent;
 	color: rgb(128, 219, 255);
+	margin-top: 60px;
 
 }
 
@@ -196,6 +197,9 @@ div#main .hero-unit{
 	div#research li{
 		margin-bottom:5px;
 	}
+	body {
+		margin-top: 0;
+	}
 }
 @media (max-width: 767px) {
 	div#ytube-container li {
@@ -204,6 +208,9 @@ div#main .hero-unit{
 	div#ytube .thumbnail h1,h2,h3 {
 		font-size: 25px;
 		line-height: 40px;
+	}
+	body {
+		margin-top:0;
 	}
 }
 @media (max-width: 480px) {
@@ -220,5 +227,58 @@ div#main .hero-unit{
 	}
 	div#tweet-container .media-body p {
 		clear: none;
+	}
+	div#search-container {
+		width:220px;
+	}
+	/*Main Page*/
+	div#youtube a {
+		width:auto;
+		height: auto;
+	}
+	div#data {
+		display: none;
+	}
+	div#native {
+		display:none;
+	}
+	div#youtube {
+		width: 225px;
+		margin-bottom: 0;
+		margin-top:-50px;
+	}
+	div#twitter {
+		width: 225px;
+		margin-bottom: -22px;
+	}
+	div#cordova {
+		width: 225px;
+		margin-right: -75px;
+		float:right;
+		margin-top:-50px;
+	}
+	div#twitter a {
+		width:auto;
+		height: auto;
+	}
+	div#cordova a {
+		width:auto;
+	}
+	div#main img {
+		width: 50%;
+		height: auto;
+	}
+	div#research {
+		margin-top: 20px;
+		padding: 10px;
+		margin-left:0;
+		width:280px;
+	}
+	div#research h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	div#research li{
+		margin-bottom:5px;
 	}
 }
