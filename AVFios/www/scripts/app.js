@@ -19,6 +19,10 @@ angular.module('angularApp', [])
         templateUrl: 'views/native.html',
         controller: 'ytubeCtrl'
       })
+      .when('/research', {
+        templateUrl: 'views/research.html',
+        controller: 'researchCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
