@@ -1,0 +1,37 @@
+<div id="twitter" class="row-fluid" ng-controller="twitCtrl">
+	<div class="span12">
+		<div class="row-fluid">
+			<div id="twitter" class="span4">
+				<div id="search-container" class="hero-unit">
+					<h1>Twitter</h1>
+					<form class="form-search" ng-submit="search()">
+						<label>Search for Tweets!</label>
+						<input type="text" class="span6 search-query" placeholder="Feed me!" ng-model="input"/>
+						<input class="btn btn-block btn-inverse" type="submit" value="Search"/>
+					</form>
+					<p>The Twitter Search API is a dedicated API for running searches against the real-time index of recent Tweets.</p>
+					<p>Data format: JSONP</p>
+					<h4>Enjoy!</h4>
+				</div>
+			</div>
+			<div class="span8">
+				<div id="tweet-container">
+					<ul class="media-list">
+						<li class="media" ng-repeat="results in tweets">
+							<a class="pull-left" href="http://twitter.com/{{results.from_user}}">
+								<img class="media-object" ng-src="{{results.profile_image_url}}"/>
+							</a>
+							<div class="media-body">
+								<a href="http://twitter.com/{{results.from_user}}">
+									<h4 class="media-heading">{{results.from_user}}</h4>
+								</a>
+								<p>"{{results.text}}"</p>
+								<span class='time'>({{results.created_at}} GMT)</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
