@@ -1,0 +1,284 @@
+/* 	Aaron Burke 
+	AVF 1303
+	*/
+
+html{
+	background:url('../img/wooden-planks-6.jpg') no-repeat center center;
+	min-height:100%;
+	background-size:cover;
+}
+
+body{
+	min-height:100%;
+	background: transparent;
+	color: rgb(128, 219, 255);
+	margin-top: 60px;
+
+}
+
+.navbar-inverse .navbar-inner {
+	background-image: -moz-linear-gradient(top, #333333, #222222);
+	background-image: -ms-linear-gradient(top, #333333, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+	background-image: -webkit-linear-gradient(top, #333333, #222222);
+	background-image: -o-linear-gradient(top, #333333, #222222);
+	background-image: linear-gradient(top, #333333, #222222);
+	background-repeat: repeat-x;
+}
+.hero-unit {
+	margin-bottom: 21px;
+}
+div#search-container.hero-unit {
+	padding: 30px;
+	background-color: rgb(35, 141, 141);
+	color: #fff;
+}
+div#search-container p,h4 {
+	color: rgb(173, 255, 255);
+}
+div#search-container h1 {
+	font-size: 60px;
+	text-align: center;
+}
+div#search-container h2 {
+	font-size: 31.5px;
+	text-align: center;
+}
+div#search-container label {
+	text-align: center;
+}
+div#search-container input.search-query {
+	width: 100%;
+	margin-bottom: 10px;
+}
+div#search-container label {
+	display: table;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+div#search-container .btn.btn-block {
+	width: 200px;
+	margin-top: 10px;
+	display: table;
+	margin: 0 auto;
+}
+
+/* Twitter Page Settings */
+div#tweet-container li {
+	list-style: none;
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.2);
+	padding-bottom: 9px;
+}
+div#tweet-container p {
+}
+
+/* YouTube Page Settings */
+div#ytube-container li {
+	list-style: none;
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+div#ytube .hero-unit {
+	background-color: rgb(40, 98, 160);
+}
+div#ytube .thumbnail {
+	height: 300px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.52);
+}
+div#ytube .thumbnail h3 {
+	padding-left: 4px;
+}
+div#ytube .thumbnail h1,h2,h3 {
+	line-height: 22px;
+	font-size: 16px;
+}
+iframe {
+	max-width: 100%;
+}
+/* Main Page */
+div#youtube a {
+	width:auto;
+	height: auto;
+}
+div#data {
+	margin-top: 115px;
+}
+div#native {
+	margin-left:-50px;
+}
+div#youtube {
+	margin-top: -150px;
+}
+div#twitter a {
+	width:auto;
+	height: auto;
+}
+div#cordova a {
+	width:auto;
+}
+div#main img {
+	width: 100%;
+	height: auto;
+}
+div#research {
+	margin-top:-70px;
+	padding: 10px;
+	margin-left: 40px;
+}
+div#research h1{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom:10px;
+}
+div#research li{
+	margin-left:-25px;
+	padding-bottom: 10px;
+}
+div#main .hero-unit{
+	background-color: rgba(238, 238, 238, 0.23);
+}
+
+/* Media Queries for all pages */
+@media (max-width: 979px) and (min-width: 768px){
+	div#search-container .btn.btn-block {
+		width: 150px;
+	}
+	div#search-container h1 {
+		font-size: 35px;
+		text-align: center;
+	}
+	div#search-container.hero-unit {
+		padding: 20px;
+	}
+	div#ytube-container li {
+		list-style: none;
+		margin-left: 8px;
+		width:220px;
+		padding-right: 10px;
+	}
+	/*Main Page*/
+	div#youtube a {
+		width:auto;
+		height: auto;
+	}
+	div#data {
+		margin-top: 115px;
+	}
+	div#native {
+		margin-left:-50px;
+	}
+	div#youtube {
+		margin-top: -120px;
+	}
+	div#twitter a {
+		width:auto;
+		height: auto;
+	}
+	div#cordova a {
+		width:auto;
+	}
+	div#main img {
+		width: 100%;
+		height: auto;
+	}
+	div#research {
+		margin-top: 20px;
+		padding: 10px;
+		margin-left: 20px;
+		width:300px;
+	}
+	div#research h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	div#research li{
+		margin-bottom:5px;
+	}
+	body {
+		margin-top: 0;
+	}
+}
+@media (max-width: 767px) {
+	div#ytube-container li {
+		margin-left: 0px;
+	}
+	div#ytube .thumbnail h1,h2,h3 {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	body {
+		margin-top:0;
+	}
+}
+@media (max-width: 480px) {
+	div#tweet-container img{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: -3px;
+	}
+	div#tweet-container .media-body {
+		overflow: visible;
+	}
+	div#tweet-container .media-body a {
+		float:none;
+	}
+	div#tweet-container .media-body p {
+		clear: none;
+	}
+	div#search-container {
+		width:220px;
+	}
+	/*Main Page*/
+	div#youtube a {
+		width:auto;
+		height: auto;
+	}
+	div#data {
+		display: none;
+	}
+	div#native {
+		display:none;
+	}
+	div#youtube {
+		width: 225px;
+		margin-bottom: 0;
+		margin-top:-50px;
+	}
+	div#twitter {
+		width: 225px;
+		margin-bottom: -22px;
+	}
+	div#cordova {
+		width: 225px;
+		margin-right: -75px;
+		float:right;
+		margin-top:-50px;
+	}
+	div#twitter a {
+		width:auto;
+		height: auto;
+	}
+	div#cordova a {
+		width:auto;
+	}
+	div#main img {
+		width: 50%;
+		height: auto;
+	}
+	div#research {
+		margin-top: 20px;
+		padding: 10px;
+		margin-left:0;
+		width:280px;
+	}
+	div#research h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	div#research li{
+		margin-bottom:5px;
+	}
+}
