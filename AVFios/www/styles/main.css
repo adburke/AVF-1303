@@ -1,6 +1,6 @@
 /* 	Aaron Burke 
 	AVF 1303
-*/
+	*/
 
 html{
 	background:url('../img/wooden-planks-6.jpg') no-repeat center center;
@@ -139,7 +139,75 @@ iframe {
 	}
 	div#tweet-container .media-body p {
 		clear: none;
-	
+	}
+	div#youtube a {
+		width:auto;
+		height: auto;
+	}
+	div#data {
+		margin-top: 115px;
+	}
+	div#native {
+		margin-left:-50px;
+	}
+	div#youtube {
+		margin-top: -150px;
+	}
+	div#twitter a {
+		width:auto;
+		height: auto;
+	}
+	div#cordova a {
+		width:auto;
+	}
+	div#main img {
+		width: 100%;
+		height: auto;
+	}
+	div#research {
+		margin-top:-70px;
+		padding: 10px;
+		margin-left: 40px;
+	}
+	div#research h1{
+		color: #000;
+		font-size: 40px;
+		text-align: center;
+	}
 }
 
-
+/* Main Page */
+div#youtube a {
+	width:auto;
+	height: auto;
+}
+div#data {
+	margin-top: 115px;
+}
+div#native {
+	margin-left:-50px;
+}
+div#youtube {
+	margin-top: -150px;
+}
+div#twitter a {
+	width:auto;
+	height: auto;
+}
+div#cordova a {
+	width:auto;
+}
+div#main img {
+	width: 100%;
+	height: auto;
+}
+div#research {
+	margin-top:-70px;
+	padding: 10px;
+	margin-left: 40px;
+}
+div#research h1{
+	color: #000;
+	font-size: 40px;
+	text-align: center;
+}

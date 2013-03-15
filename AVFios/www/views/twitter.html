@@ -6,8 +6,8 @@
 					<h1>Twitter</h1>
 					<form class="form-search" ng-submit="search()">
 						<label>Search for Tweets!</label>
-						<input type="text" class="span6 search-query" placeholder="Feed me!" ng-model="input">
-						<input class="btn btn-block btn-inverse" type="submit" value="Search">
+						<input type="text" class="span6 search-query" placeholder="Feed me!" ng-model="input"/>
+						<input class="btn btn-block btn-inverse" type="submit" value="Search"/>
 					</form>
 					<p>The Twitter Search API is a dedicated API for running searches against the real-time index of recent Tweets.</p>
 					<p>Data format: JSONP</p>
@@ -19,7 +19,7 @@
 					<ul class="media-list">
 						<li class="media" ng-repeat="results in tweets">
 							<a class="pull-left" href="http://twitter.com/{{results.from_user}}">
-								<img class="media-object" ng-src="{{results.profile_image_url}}">
+								<img class="media-object" ng-src="{{results.profile_image_url}}"/>
 							</a>
 							<div class="media-body">
 								<a href="http://twitter.com/{{results.from_user}}">
