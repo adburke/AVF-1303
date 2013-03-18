@@ -9,7 +9,7 @@ angular.module('angularApp')
     ];
   });
 
-function twitCtrl($scope, $http) {
+function twitCtrl($scope, $http, cordovaReady) {
   $scope.input = '';
   $scope.search = function () {
     $http.jsonp('https://search.twitter.com/search.json?q=%40' + $scope.input + '&callback=JSON_CALLBACK')
@@ -20,7 +20,7 @@ function twitCtrl($scope, $http) {
   };
 }
 
-function ytubeCtrl($scope, $http) {
+function ytubeCtrl($scope, $http, cordovaReady) {
   $scope.input = '';
   $scope.search = function () {
     $http.jsonp('https://gdata.youtube.com/feeds/api/videos?category=' + $scope.input + '&alt=json&max-results=6&v=2&callback=JSON_CALLBACK')
