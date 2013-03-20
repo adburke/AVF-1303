@@ -17,7 +17,7 @@ angular.module('angularApp', [])
       })
       .when('/native', {
         templateUrl: 'views/native.html',
-        controller: 'ytubeCtrl'
+        controller: 'nativeCtrl'
       })
       .when('/research', {
         templateUrl: 'views/research.html',

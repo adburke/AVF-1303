@@ -1,13 +1,13 @@
 'use strict';
 
-// angular.module('angularApp')
-//   .controller('MainCtrl', function ($scope) {
-//     $scope.awesomeThings = [
-//       'HTML5 Boilerplate',
-//       'AngularJS',
-//       'Testacular'
-//     ];
-//   });
+angular.module('angularApp')
+  .controller('MainCtrl', function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Testacular'
+    ];
+  });
 
 
 function twitCtrl($scope, $http) {
@@ -41,3 +41,9 @@ function ytubeCtrl($scope, $http) {
       });
   };
 }
+
+function nativeCtrl($scope) {
+  $scope.getImage = function (imageURI) {
+    $scope.image = imageURI;
+  };
+};
