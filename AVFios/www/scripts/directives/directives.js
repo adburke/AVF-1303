@@ -64,7 +64,7 @@ app.directive('accel', function() {
       restrict: 'A',
       link: function(scope, element, attrs, ctrl) {
          element.bind('click', function() {
-            // console.log('Fired');
+            console.log(element);
             navigator.accelerometer.watchAcceleration(function (acceleration) {
                scope.$apply(function() {
                    scope.getAccel(acceleration);
@@ -78,3 +78,4 @@ app.directive('accel', function() {
       }
    };
 });
+
