@@ -15,7 +15,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="index.html">Aaron Burke AVF0313</a>
+          <a class="brand" href="#/index">Aaron Burke AVF0313</a>
      
           <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -27,13 +27,7 @@
           <!-- Everything you want hidden at 940px or less, place within here -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Native Component Demos<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">TBD Placeholder</a></li>
-                  <li><a href="#">TBD Placeholder</a></li>
-                  <li><a href="#">TBD Placeholder</a></li>
-                  <li><a href="#">TBD Placeholder</a></li>
-                </ul>
+              <li><a href="#/native">Native Component Demos</a>
               </li>
             </ul>
             <ul class="nav">
@@ -52,14 +46,15 @@
     <div class="ng-view"></div>
 
     <script type="text/javascript" src="components/cordova/cordova-2.5.0.js"></script>
-    <script type="text/javascript" src="components/angular/angular.js"></script>
-    <script type="text/javascript" src="components/angular-resource/angular-resource.js"></script>
-    <script type="text/javascript" src="components/jquery/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="components/bootstrap/bootstrap.min.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/jquery/jquery-1.9.1.min.js"></script>
+    <script src="components/bootstrap/bootstrap.min.js"></script>
 
     <!-- build:js scripts/scripts.js -->
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/controllers/main.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/directives.js"></script>
     <!-- endbuild -->
 
   </body>

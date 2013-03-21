@@ -141,6 +141,9 @@ div#main .hero-unit{
 	background-color: rgba(238, 238, 238, 0.23);
 }
 
+/* Native Page */
+
+
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
 	div#search-container .btn.btn-block {
