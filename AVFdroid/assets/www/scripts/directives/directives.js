@@ -32,7 +32,8 @@ app.directive('geolocation', function() {
                });
             }, function (err) {
                   ctrl.$setValidity('error', false);
-               }
+               },
+               { enableHighAccuracy: true }
             );
          });
       }
