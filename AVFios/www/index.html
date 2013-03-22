@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" > 
+<html lang="en" ng-app="angularApp"> 
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -10,33 +10,8 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles/bootstrap-responsive.min.css"/>
     <link rel="stylesheet" href="styles/main.css"/>
-
-    <script type="text/javascript" charset="utf-8" src="components/cordova/cordova-2.5.0.js"></script>
-    <script>
-      function onLoad() {
-          document.addEventListener("deviceready", onDeviceReady, false);
-          console.log("cordova ready");
-      }
-
-      // Cordova is loaded and it is now safe to make calls Cordova methods
-      //
-      function onDeviceReady() {
-          // Now safe to use the Cordova API
-          console.log("cordova ready");
-      }
-
-    </script>
-    <script src="components/angular/angular.js"></script>
-    <!-- <script src="components/angular-resource/angular-resource.js"></script>
-    <script src="components/jquery/jquery-1.9.1.min.js"></script>
-    <script src="components/bootstrap/bootstrap.min.js"></script>
-
-    
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/directives/directives.js"></script> -->
   </head>
-  <body onload="onLoad()">
+  <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -69,6 +44,17 @@
     </nav><!-- navbar -->
 
     <div class="ng-view"></div>
+
+    <script type="text/javascript" charset="utf-8" src="components/cordova/cordova-2.5.0.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular-resource/angular-resource.js"></script>
+    <script src="components/jquery/jquery-1.9.1.min.js"></script>
+    <script src="components/bootstrap/bootstrap.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/directives.js"></script>
     
+
   </body>
 </html>
