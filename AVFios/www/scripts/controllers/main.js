@@ -1,16 +1,8 @@
 'use strict';
 
-angular.module('angularApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Testacular'
-    ];
-  });
+var app = angular.module('angularApp');
 
-
-function twitCtrl($scope, $http) {
+app.controller('twitCtrl', function ($scope, $http) {
   // $scope.input = '';
   $scope.search = function () {
     $http.jsonp('http://search.twitter.com/search.json?q=%40' + $scope.input + '&rpp=5&callback=JSON_CALLBACK')
@@ -24,9 +16,9 @@ function twitCtrl($scope, $http) {
           console.log(status);
       });
   };
-}
+});
 
-function ytubeCtrl($scope, $http) {
+app.controller('ytubeCtrl', function ($scope, $http) {
   // $scope.input = '';
   $scope.search = function () {
     $http.jsonp('https://gdata.youtube.com/feeds/api/videos?category=' + $scope.input + '&alt=json&max-results=6&v=2&callback=JSON_CALLBACK')
@@ -40,9 +32,9 @@ function ytubeCtrl($scope, $http) {
           console.log(status);
       });
   };
-}
+});
 
-function nativeCtrl($scope) {
+app.controller('nativeCtrl', function ($scope) {
   $scope.image = "./img/cordova.png";
   $scope.getImage = function (imageURI) {
     $scope.image = imageURI;
@@ -70,4 +62,5 @@ function nativeCtrl($scope) {
     $scope.accelTimestamp = acceleration.timestamp;
   };
 
-};
+});
+

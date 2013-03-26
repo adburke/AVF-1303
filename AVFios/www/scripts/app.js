@@ -5,7 +5,7 @@ angular.module('angularApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        // controller: 'MainCtrl'
       })
       .when('/twitter', {
         templateUrl: 'views/twitter.html',
