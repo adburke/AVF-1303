@@ -140,12 +140,30 @@ div#research li{
 div#main .hero-unit{
 	background-color: rgba(238, 238, 238, 0.23);
 }
-
+.span4 {
+	width: 280px;
+}
+div#mainRow {
+	margin-left: 64px;
+}
 /* Native Page */
 
 
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
+	.span12 {
+		width: 732px;
+		margin-left: 10px;
+	}
+	div#mainRow {
+		margin-left: 10px;
+	}
+	.span4 {
+		width: 226px;
+	}
+	div#main {
+		padding: 0;
+	}
 	div#search-container .btn.btn-block {
 		width: 150px;
 	}
@@ -205,6 +223,12 @@ div#main .hero-unit{
 	}
 }
 @media (max-width: 767px) {
+	div#mainRow {
+		margin-left: 0;
+	}
+	.span4 {
+		width: 100%;
+	}
 	div#ytube-container li {
 		margin-left: 0px;
 	}
