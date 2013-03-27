@@ -146,6 +146,35 @@ div#main .hero-unit{
 div#mainRow {
 	margin-left: 64px;
 }
+div#logoTw.hero-unit{
+	background: #08afe6 url(../img/twitter.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+div#logoYt.hero-unit {
+	background: #dadada url(../img/youtube.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+div#logoNt.hero-unit {
+	background: #dadada url(../img/cordova.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+div#logoMash1.hero-unit {
+	background: url(../img/mash1.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 130px;
+	padding-right: 130px;
+}
+div#logoMash2.hero-unit {
+	background: url(../img/mash2.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 130px;
+	padding-right: 130px;
+}
 /* Native Page */
 
 
