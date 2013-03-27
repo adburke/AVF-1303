@@ -64,3 +64,11 @@ app.controller('nativeCtrl', function ($scope) {
 
 });
 
+app.controller('mash1Ctrl', function ($scope) {
+
+  $scope.geo = function(position) {
+    $scope.latitude = position.coords.latitude;
+    $scope.longitude = position.coords.longitude;
+  };
+          
+});

@@ -161,6 +161,15 @@ div#logoNt.hero-unit {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
+
+/* Native Page */
+
+/* Mashup 1 */
+
+div#mash1Info.hero-unit {
+	background-color: rgba(238, 238, 238, 0.23);
+	padding: 10px;
+}
 div#logoMash1.hero-unit {
 	background: url(../img/mash1.png) no-repeat center center;
 	padding-top: 80px;
@@ -175,8 +184,15 @@ div#logoMash2.hero-unit {
 	padding-left: 130px;
 	padding-right: 130px;
 }
-/* Native Page */
-
+#map_canvas{
+    width:100%;
+    height: 450px; 
+    border: 1px solid #333335;
+    margin-bottom:20px;
+}
+div#mash1Row {
+	margin-left: 86px;
+}
 
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
