@@ -26,7 +26,7 @@ angular.module('angularApp', [])
         templateUrl: 'views/research2.html'
       })
       .when('/research3', {
-        templateUrl: 'views/research.html'
+        templateUrl: 'views/research3.html'
       })
       .when('/mash1', {
         templateUrl: 'views/mash1.html',

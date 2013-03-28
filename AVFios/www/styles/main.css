@@ -161,6 +161,21 @@ div#logoNt.hero-unit {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
+div#doc1.hero-unit {
+	background: rgba(238, 238, 238, 0.1) url(../img/doc1.png) no-repeat center center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+div#doc2.hero-unit {
+	background: rgba(238, 238, 238, 0.1) url(../img/doc2.png) no-repeat center center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+div#doc3.hero-unit {
+	background: rgba(238, 238, 238, 0.1) url(../img/doc3.png) no-repeat center center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
 /* Native Page */
 
@@ -193,6 +208,9 @@ div#logoMash2.hero-unit {
 div#mash1Row {
 	margin-left: 86px;
 }
+div#content p, h2 {
+	color: #000;
+}
 
 /* Mashup 2 */
 
@@ -203,6 +221,17 @@ li#weatherBlock img {
 li#weatherBlock h1, h3 {
 	text-align: center;
 
+}
+div#mash2 .hero-unit {
+	background-color: rgba(238, 238, 238, 0.23);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 0;
+
+}
+div#mash2 p {
+	line-height: 25px;
 }
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){

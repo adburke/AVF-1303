@@ -1,8 +1,11 @@
-<div ng-controller="mash2Ctrl">
+<div id="mash2" ng-controller="mash2Ctrl">
 	<ul class="thumbnails">
-		<li class="span2 hero-unit"> 
-			<h1>Test</h1>
-			<p>Test</p>
+		<li class="span4 hero-unit"> 
+			<h4>10 Day Forecast</h4>
+			<p>This demo utilizes Phonegap geolocation and Weather Underground API.</p>
+			<p>Position:</p>
+			<p>Lat: {{latitude}}</p>
+			<p>Long: {{latitude}}</p>
 		</li>
 		<li id="weatherBlock" class="span4" ng-repeat="results in weather">
 			<div class="thumbnail">
@@ -14,4 +17,3 @@
 		</li>
 	</ul>
 </div>
-
