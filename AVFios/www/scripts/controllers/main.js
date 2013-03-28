@@ -66,9 +66,26 @@ app.controller('nativeCtrl', function ($scope) {
 
 app.controller('mash1Ctrl', function ($scope) {
 
-  $scope.geo = function(position) {
+  $scope.geoMash = function(position) {
     $scope.latitude = position.coords.latitude;
     $scope.longitude = position.coords.longitude;
   };
           
+});
+
+app.controller('mash2Ctrl', function ($scope, $http, geolocation) {
+
+  geolocation.getCurrentPosition(function (position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+
+    $http.jsonp('http://api.wunderground.com/api/d97410dd6342cdac/forecast/q/' + latitude + ',' + longitude + '.json?callback=JSON_CALLBACK')
+      .success(function(data) {
+        var wthr = data.forecast.simpleforecast.forecastday;
+        $scope.weather = wthr;
+      })
+      .error(function(data, status) {
+          console.log(status);
+      });
+    });
 });

@@ -84,17 +84,16 @@ app.directive('map', function() {
         restrict: 'E',
         replace: true,
         template: '<div></div>',
-        link: function(scope, element, attrs) {
+        link: function(scope, element, attrs, ctrl) {
             console.log(element);
-            var latitude, longitude; 
             navigator.geolocation.getCurrentPosition(function (position) {
                scope.$apply(function() {
-                   scope.geo(position);
+                   scope.geoMash(position);
                });
                console.log('geo fired');
                console.log(position);
-               latitude = position.coords.latitude;
-               longitude = position.coords.longitude;
+               var latitude = position.coords.latitude;
+               var longitude = position.coords.longitude;
                var myOptions = {
                    zoom: 8,
                    center: new google.maps.LatLng(latitude, longitude),
@@ -128,7 +127,7 @@ app.directive('map', function() {
                   google.maps.event.addListener(marker, 'click', function() {
                     infowindow.open(map,marker);
                   });
-               }; 
+               };
 
                addMarker(position);
 
@@ -139,3 +138,32 @@ app.directive('map', function() {
         }
     };
 });
+
+// app.directive('weather', function($http) {
+//    return {
+//       restrict: 'E',
+//       link: function(scope, element, attrs, ctrl) {
+//         console.log('Fired');
+//         navigator.geolocation.getCurrentPosition(function (position) {
+//           var latitude = position.coords.latitude;
+//           var longitude = position.coords.longitude;
+
+//           $http.jsonp('http://api.wunderground.com/api/d97410dd6342cdac/forecast/q/' + latitude + ',' + longitude + '.json?callback=JSON_CALLBACK')
+//             .success(function(data) {
+//               var wthr = data.forecast.simpleforecast.forecastday;
+              
+//             })
+//             .error(function(data, status) {
+//                 $scope.data = data || "Request failed";
+//                 $scope.status = status;
+//                 console.log(status);
+//             });
+           
+//         }, function (err) {
+//               ctrl.$setValidity('error', false);
+//            }
+//         );
+
+//       }
+//    };
+// });

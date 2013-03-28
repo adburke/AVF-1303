@@ -196,6 +196,14 @@ div#mash1Row {
 
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
+	div#logoMash1.hero-unit {
+		background: url(../img/mash1-a.png) no-repeat center center;
+		padding-right: 128px;
+	}
+	div#logoMash2.hero-unit {
+		background: url(../img/mash2-a.png) no-repeat center center;
+		padding-right: 94px;
+	}
 	.span12 {
 		width: 732px;
 		margin-left: 10px;
@@ -268,6 +276,9 @@ div#mash1Row {
 	}
 }
 @media (max-width: 767px) {
+	div#mash1Row {
+		margin-left: 0;
+	}
 	div#mainRow {
 		margin-left: 0;
 	}
@@ -286,6 +297,12 @@ div#mash1Row {
 	}
 }
 @media (max-width: 480px) {
+	div#logoMash1.hero-unit {
+		background: url(../img/mash1-a.png) no-repeat center center;
+	}
+	div#logoMash2.hero-unit {
+		background: url(../img/mash2-a.png) no-repeat center center;
+	}
 	div#tweet-container img{
 		float: left;
 		margin-right: 10px;
