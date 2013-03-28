@@ -5,7 +5,7 @@ angular.module('angularApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        // controller: 'MainCtrl'
       })
       .when('/twitter', {
         templateUrl: 'views/twitter.html',
@@ -20,13 +20,21 @@ angular.module('angularApp', [])
         controller: 'nativeCtrl'
       })
       .when('/research1', {
-        templateUrl: 'views/research1.html',
+        templateUrl: 'views/research1.html'
       })
       .when('/research2', {
-        templateUrl: 'views/research2.html',
+        templateUrl: 'views/research2.html'
       })
       .when('/research3', {
-        templateUrl: 'views/research.html',
+        templateUrl: 'views/research3.html'
+      })
+      .when('/mash1', {
+        templateUrl: 'views/mash1.html',
+        controller: 'mash1Ctrl'
+      })
+      .when('/mash2', {
+        templateUrl: 'views/mash2.html',
+        controller: 'mash2Ctrl'
       })
       .otherwise({
         redirectTo: '/'
