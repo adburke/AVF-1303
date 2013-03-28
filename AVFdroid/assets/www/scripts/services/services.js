@@ -32,6 +32,7 @@ app.factory('accelerometer', function ($rootScope, cordovaReady) {
   return {
     getCurrentAcceleration: cordovaReady(function (onSuccess, onError) {
       navigator.accelerometer.getCurrentAcceleration(function () {
+        ("accelerometer service fired");
         var that = this,
           args = arguments;
           
@@ -57,11 +58,12 @@ app.factory('accelerometer', function ($rootScope, cordovaReady) {
 // Phonegap Accelerometer service
 app.factory('geolocation', function ($rootScope, cordovaReady) {
   return {
-    getCurrentAcceleration: cordovaReady(function (onSuccess, onError) {
+    getCurrentPosition: cordovaReady(function (onSuccess, onError) {
       navigator.geolocation.getCurrentPosition(function () {
+        console.log("geolocation service fired");
         var that = this,
           args = arguments;
-         
+        // Success function
         if (onSuccess) {
           $rootScope.$apply(function () {
             onSuccess.apply(that, args);
@@ -70,7 +72,7 @@ app.factory('geolocation', function ($rootScope, cordovaReady) {
       }, function () {
         var that = this,
           args = arguments;
-          
+        // Error function 
         if (onError) {
           $rootScope.$apply(function () {
             onError.apply(that, args);
