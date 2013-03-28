@@ -78,7 +78,8 @@ app.factory('geolocation', function ($rootScope, cordovaReady) {
             onError.apply(that, args);
           });
         }
-      });
+      },{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true }
+      );
     })
   };
 });
