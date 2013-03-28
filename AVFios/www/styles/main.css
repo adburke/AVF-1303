@@ -194,6 +194,16 @@ div#mash1Row {
 	margin-left: 86px;
 }
 
+/* Mashup 2 */
+
+li#weatherBlock img {
+	width:100px;
+
+}
+li#weatherBlock h1, h3 {
+	text-align: center;
+
+}
 /* Media Queries for all pages */
 @media (max-width: 979px) and (min-width: 768px){
 	div#logoMash1.hero-unit {
